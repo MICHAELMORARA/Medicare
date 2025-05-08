@@ -1,4 +1,5 @@
 import React from "react";
+import zcube from "../images/zcube.png";
 
 const Home = () => {
   return (
@@ -30,7 +31,7 @@ const Home = () => {
           </button>
         </div>
         <div class="mt-8 md:-mt-8 md:ml-4">
-          <img src="//zcube.in/mecare/img/bg/header-img.png" alt=" " />
+          <img src={zcube} alt=" " />
         </div>
       </div>
     </div>
