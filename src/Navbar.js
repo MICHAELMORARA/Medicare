@@ -19,7 +19,7 @@ const Navbar = () => {
         />
 
         {/* Top bar */}
-        <div className="md:visible invisible md:flex bg-gradient-to-r from-blue-900 to-blue-500 text-white md:ml-64 p-2 md:justify-between text-sm">
+        <div className="md:visible invisible rounded-sm md:flex bg-gradient-to-r from-blue-900 to-blue-500 text-white md:ml-64 p-2 md:justify-between text-sm">
           <div className="flex items-center">
             <p className="text-white mr-6 flex">
               <i className="fas fa-envelope mr-2 mt-1"></i> medicare@gmail.com
