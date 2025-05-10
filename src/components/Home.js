@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import zcube from "../images/zcube.png";
 
 const Home = () => {
@@ -32,17 +33,19 @@ const Home = () => {
             </p>
             
             <div className="mt-8"> {/* Wrapped button in div with margin top */}
-              <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <span>Learn More</span>
-                <span className="ml-3 flex items-center justify-center w-8 h-8 rounded-full bg-white bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </span>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute h-0 w-0 rounded-full bg-white opacity-20 group-hover:h-32 group-hover:w-32 transition-all duration-500"></div>
-                </div>
-              </button>
+              <Link to="/services">
+                <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-full px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <span>Learn More</span>
+                  <span className="ml-3 flex items-center justify-center w-8 h-8 rounded-full bg-white bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute h-0 w-0 rounded-full bg-white opacity-20 group-hover:h-32 group-hover:w-32 transition-all duration-500"></div>
+                  </div>
+                </button>
+              </Link>
             </div>
           </div>
           

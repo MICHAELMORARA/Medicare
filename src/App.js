@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import { Footer } from "./Footer";
 import "./index.css";
 import "tailwindcss/tailwind.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import AboutUs from "./components/AboutUs";
 import Home from "./components/Home";
 import { Services } from "./components/Services";
@@ -17,6 +17,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          {/* Default route that redirects to /home */}
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          
+          {/* Your existing routes */}
           <Route path="/home" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
