@@ -37,12 +37,14 @@ const Navbar = () => {
 
         {/* Logo and Nav */}
         <div className="md:flex w-full px-6 py-4 justify-between items-center">
-          <div className="flex items-center">
+          <div className="flex items-center justify-between w-full md:w-auto">
             <img src={logo} alt="logo" className="w-28" />
-            <div className="cursor-pointer md:hidden" onClick={toggleMenu}>
-              <svg className="w-6 h-6 ml-28 text-black" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
-              </svg>
+            <div className="cursor-pointer md:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition-all duration-200" onClick={toggleMenu}>
+              {isMenuOpen ? (
+                <i className="fas fa-times text-xl text-blue-600"></i>
+              ) : (
+                <i className="fas fa-bars text-xl text-gray-700"></i>
+              )}
             </div>
           </div>
 
